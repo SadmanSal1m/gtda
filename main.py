@@ -12,9 +12,9 @@ from statsmodels.tsa.arima.model import ARIMA
 # Upload the dataset CSV file
 st.subheader('Upload Dataset')
 file = st.file_uploader("Upload CSV", type=["csv"])
-    if file is not None:
-        # Read the CSV file
-        data = pd.read_csv(file, encoding='ISO-8859-1', low_memory=False)
+if file is not None:
+    # Read the CSV file
+    data = pd.read_csv(file, encoding='ISO-8859-1', low_memory=False)
         
 # Set page title and layout
 st.set_page_config(page_title='Global Terrorism Analysis', layout='wide')
